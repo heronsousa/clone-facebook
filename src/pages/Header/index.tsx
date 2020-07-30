@@ -19,8 +19,9 @@ import {
     MarketIcon,
     GroupIcon,
     ActiveBar,
+    GamingIcon,
     Active,
-    GamingIcon
+    ButtonBackground
 } from './styles';
 
 const Header: React.FC = () => {
@@ -39,11 +40,26 @@ const Header: React.FC = () => {
                     <HomeIcon />
                     <ActiveBar />
                 </Active>
-                <WatchIcon />
-                <MarketIcon />
-                <GroupIcon />
-                <MenuIcon />
-                <GamingIcon />
+                
+                <ButtonBackground>
+                    <WatchIcon />
+                </ButtonBackground>
+
+                <ButtonBackground>
+                    <MarketIcon />
+                </ButtonBackground>
+
+                <ButtonBackground>
+                    <GroupIcon />
+                </ButtonBackground>
+
+                <ButtonBackground>
+                    <GamingIcon />
+                </ButtonBackground>
+
+                <ButtonBackground>
+                    <MenuIcon />
+                </ButtonBackground>
             </WrapperMenu>
 
             <WrapperRight>
