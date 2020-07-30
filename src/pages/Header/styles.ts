@@ -1,5 +1,18 @@
 import styled, { css } from 'styled-components';
-import { Messenger, Plus, Notifications, Facebook, Search, Menu, ArrowDropDown } from '../../styles/Icons';
+import { 
+    Messenger,
+    Plus,
+    Notifications,
+    Facebook,
+    Search,
+    Menu,
+    ArrowDropDown,
+    Home,
+    Watch,
+    Market,
+    Group,
+    Gaming
+} from '../../styles/Icons';
 
 export const Container = styled.div`
     display: flex;
@@ -11,6 +24,7 @@ export const Container = styled.div`
     padding: 0 16px 0 12px;
 
     background: var(--secondary-background);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.29);
 `;
 
 export const WrapperLeft = styled.div`
@@ -69,19 +83,103 @@ export const SearchIcon = styled(Search)`${iconCSS}`;
 
 export const WrapperMenu = styled.div`
     display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 100%;
 
-    margin-left: 22px;
+    svg:nth-child(n + 2){
+        margin-left: 10%;
+    }
+
+    @media(max-width: 700px) {
+        justify-content: flex-start;
+
+        margin-left: 22px;
+
+        svg:nth-child(-n+4), div{
+            display: none;
+        }
+        svg:nth-child(5){
+            margin-left: 0;
+        }
+    }
+
+    @media(min-width: 1100px) {
+        svg:nth-child(5){
+            display: none;
+        }
+        svg:nth-child(6){
+            display: flex;
+        }
+    }
+`;
+
+export const Active = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 60px;
+    padding-top: 15px;
+`;
+
+export const HomeIcon = styled(Home)`
+    width: 30px;
+    height: 30px;
+
+    color: var(--facebook);
+`;
+
+export const ActiveBar = styled.div`
+    height: 3px;
+    width: 7vw;
+    background: var(--facebook);
+`;
+
+export const WatchIcon = styled(Watch)`
+    width: 30px;
+    height: 30px;
+
+    color: var(--gray);
+`;
+
+export const MarketIcon = styled(Market)`
+    width: 22px;
+    height: 22px;
+
+    > path {
+        fill: var(--gray);
+    }
+`;
+
+export const GroupIcon = styled(Group)`
+    width: 31px;
+    height: 31px;
+
+    > path {
+        color: var(--gray);
+    }
 `;
 
 export const MenuIcon = styled(Menu)`
     width: 30px;
     height: 30px;
 
-    left: 15px;
-
     color: var(--gray);
 `;
+
+export const GamingIcon = styled(Gaming)`
+    display: none;
+    width: 31px;
+    height: 31px;
+
+    > path {
+        fill: var(--gray);
+    }
+`;
+
 export const PlusIcon = styled(Plus)`
     ${iconCSS}
 

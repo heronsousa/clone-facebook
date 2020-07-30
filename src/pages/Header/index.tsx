@@ -13,7 +13,14 @@ import {
     MessengerIcon,
     FacebookIcon,
     SearchIcon,
-    MenuIcon
+    MenuIcon,
+    HomeIcon,
+    WatchIcon,
+    MarketIcon,
+    GroupIcon,
+    ActiveBar,
+    Active,
+    GamingIcon
 } from './styles';
 
 const Header: React.FC = () => {
@@ -28,7 +35,15 @@ const Header: React.FC = () => {
             </WrapperLeft>
                 
             <WrapperMenu>
+                <Active>
+                    <HomeIcon />
+                    <ActiveBar />
+                </Active>
+                <WatchIcon />
+                <MarketIcon />
+                <GroupIcon />
                 <MenuIcon />
+                <GamingIcon />
             </WrapperMenu>
 
             <WrapperRight>
