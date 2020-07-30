@@ -28,8 +28,10 @@ export default createGlobalStyle`
     :root {
         --facebook: #1877f2;
         --primary-background: #f0f2f5;
-        --secondary-background: #e4e6eb;
+        --secondary-background: #fff;
+        --icon-background: #e4e6eb;
         --primary: #050505;
         --secondary-text: #65676b;
+        --gray: #65676b;
     }
 `;

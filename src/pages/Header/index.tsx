@@ -1,17 +1,55 @@
 import React from 'react';
 
-import { Container, ArrowDownIcon, MessengerIcon, FacebookIcon, SearchIcon, MenuIcon } from './styles';
+import { 
+    Container,
+    WrapperLeft,
+    WrapperRight,
+    WrapperMenu,
+    SearchBackground,
+    IconBackground,
+    PlusIcon,
+    NotificationsIcon,
+    ArrowDownIcon,
+    MessengerIcon,
+    FacebookIcon,
+    SearchIcon,
+    MenuIcon
+} from './styles';
 
 const Header: React.FC = () => {
-  return(
-      <Container>
-          <FacebookIcon />
-          <MessengerIcon />
-          <SearchIcon />
-          <MenuIcon />
-          <ArrowDownIcon />
-      </Container>
-  );
+    return(
+        <Container>
+            <WrapperLeft>
+                <FacebookIcon />
+
+                <SearchBackground>
+                    <SearchIcon />
+                </SearchBackground>
+            </WrapperLeft>
+                
+            <WrapperMenu>
+                <MenuIcon />
+            </WrapperMenu>
+
+            <WrapperRight>
+                <IconBackground>
+                    <PlusIcon />
+                </IconBackground>
+
+                <IconBackground>
+                    <MessengerIcon />
+                </IconBackground>
+
+                <IconBackground>
+                    <NotificationsIcon />
+                </IconBackground>
+
+                <IconBackground>
+                    <ArrowDownIcon />
+                </IconBackground>
+            </WrapperRight>
+        </Container>
+    );
 }
 
 export default Header;

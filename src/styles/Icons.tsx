@@ -1,5 +1,7 @@
 export { Messenger } from './Icons/Messenger'
 export { Facebook } from './Icons/Facebook'
+export { Notifications } from './Icons/Notifications'
 export { Search } from 'styled-icons/material-outlined'
 export { Menu } from 'styled-icons/heroicons-outline'
+export { Plus } from 'styled-icons/heroicons-solid'
 export { ArrowDropDown } from 'styled-icons/material-rounded'
